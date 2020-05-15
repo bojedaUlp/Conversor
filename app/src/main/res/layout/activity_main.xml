@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="50sp"
+        android:text="Euros" />
+
+    <EditText
+        android:id="@+id/etEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvE"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEuro"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="29dp"
+        android:text="Dolares" />
+
+    <EditText
+        android:id="@+id/etDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvD"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <RadioButton
+        android:id="@+id/rbEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/etDolar"
+        android:text="Euros a Dolares" />
+    <RadioButton
+        android:id="@+id/rbDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/rbEuros"
+        android:text="Dolares a Euros" />
+
+    <TextView
+        android:id="@+id/tvConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbDolares"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="22dp"
+        android:text="Cambio a..." />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvConvertir"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResultado"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="18dp"
+        android:text="Convertir" />
+
+
+</RelativeLayout>
